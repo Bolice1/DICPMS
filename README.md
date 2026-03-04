@@ -2,7 +2,7 @@
 **Digital Infrastructure, Compensation & Property Management System**
 
 <img src="https://readme-typing-svg.herokuapp.com?lines=Build+it;Attack+it;Secure+it!" />
-<img src="https://readme-typing-svg.herokuapp.com?lines=Solving+Society+Problems;Building+Secure+Systems;Through+Conducting+Tests;In+Secure;Environments;" />
+<img src="https://readme-typing-svg.herokuapp.com?lines=Solving+Society+Problems;Building+Secure+Systems;Through+Conducting+Tests;In+Secure+Environments;" />
 
 
 
