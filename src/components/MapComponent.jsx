@@ -49,6 +49,17 @@ function MapComponent({ propertiesGeoJSON, affectedPropertyIds, onUpdateLine, dr
       onUpdateLine(event.layer.toGeoJSON());
     });
 
+    map.on(L.Draw.Event.EDITED, (event) => {
+      // Update the line state after editing the drawn polyline.
+      let updatedGeoJSON = null;
+      event.layers.eachLayer((layer) => {
+        updatedGeoJSON = layer.toGeoJSON();
+      });
+      if (updatedGeoJSON) {
+        onUpdateLine(updatedGeoJSON);
+      }
+    });
+
     map.on(L.Draw.Event.DELETED, () => {
       drawItemsRef.current.clearLayers();
       onUpdateLine(null);
